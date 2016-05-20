@@ -16,6 +16,6 @@ public class LoginAction extends Action {
                                  ServletRequest request, ServletResponse response) throws Exception {
         LoginForm loginForm = (LoginForm)form;
 
-        return mapping.findForward("success");
+        return mapping.findForward("failure");
     }
 }

@@ -24,7 +24,7 @@
     <html:submit>
         <bean:message key="login.jsp.prompt.submit"/>
     </html:submit>
-    
+
 </html:form>
 </body>
 </html:html>
