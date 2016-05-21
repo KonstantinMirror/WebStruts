@@ -20,7 +20,6 @@
                 <span class="text-warning">
                   <html:errors property="userName"/>
                 </span>
-
             </div>
 
             <div class="form-group">

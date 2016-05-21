@@ -15,8 +15,7 @@
                 scope="request"
                 input="/login.jsp"
                 validate="true">
-            <forward name="success" path="/ReservationPage .jsp" redirect="true"/>
-            <forward name="failure" path="/login.jsp" redirect="true"/>
+            <forward name="success" path="/ReservationPage.jsp"/>
         </action>
     </action-mappings>
     <message-resources parameter="Application"/>
