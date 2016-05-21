@@ -9,17 +9,43 @@
     </head>
     <body>
     <div class="container">
-        <h2><bean:message key=""/></h2>
+        <h2><bean:message key="login.jsp.title.form"/></h2>
         <html:form styleClass="form-horizontal" action="/login">
-            <bean:message key="login.jsp.promt.userName"/>
-            <html:text property="userName" size="20"/>
-            <html:errors property="userName"/>
-            <bean:message key="login.jsp.promt.password"/>
-            <html:password property="password" size="20"/>
-            <html:errors property="password"/>
-            <html:submit>
-                <bean:message key="login.jsp.prompt.submit"/>
-            </html:submit>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4">
+                    <bean:message key="login.jsp.promt.userName"/>
+                    <html:text property="userName" size="20"/>
+                </label>
+                <span class="text-warning">
+                  <html:errors property="userName"/>
+                </span>
+
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4">
+                    <bean:message key="login.jsp.promt.password"/>
+                    <html:password property="password" size="20"/>
+                </label>
+                <span class="text-warning">
+                  <html:errors property="password"/>
+                </span>
+            </div>
+
+            <div class="form-group">
+                <div class=" col-sm-offset-2 col-sm-10">
+                    <html:submit styleClass="btn btn-success">
+                        <bean:message key="login.jsp.prompt.submit"/>
+                    </html:submit>
+                    <a href="/login.jsp">
+                        <button type="button" class="btn btn-warning">
+                            <bean:message key="login.jsp.prompt.cancel"/>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
         </html:form>
     </div>
     </body>
