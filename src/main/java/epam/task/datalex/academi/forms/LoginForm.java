@@ -5,7 +5,8 @@ import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.action.ActionMessage;
-import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServletRequest;
+
 import static epam.task.datalex.academi.constants.Constants.*;
 
 public class LoginForm extends ActionForm {
@@ -30,8 +31,9 @@ public class LoginForm extends ActionForm {
     }
 
     @Override
-    public ActionErrors validate(ActionMapping mapping, ServletRequest request) {
-        System.out.println("Inner  validate");
+    public ActionErrors validate(ActionMapping mapping, HttpServletRequest request) {
+        System.out.println("Inner  validate------------------");
+
         ActionErrors errors = new ActionErrors();
         errors.add("userName", new ActionMessage("login.error.username.missing"));
 
@@ -43,10 +45,5 @@ public class LoginForm extends ActionForm {
             errors.add("password", new ActionMessage("login.error.password.missing"));
         }
         return errors;
-    }
-
-    @Override
-    public void reset(ActionMapping mapping, ServletRequest request) {
-        password = null;
     }
 }
