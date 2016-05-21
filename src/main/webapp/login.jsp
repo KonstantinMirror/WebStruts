@@ -3,28 +3,29 @@
 <%@taglib prefix="html" uri="http://struts.apache.org/tags-html" %>
 
 <html:html>
-<head>
-    <title><bean:message key="login.jsp.title"/></title>
-</head>
-<body>
+    <head>
+        <title><bean:message key="login.jsp.title"/></title>
+    </head>
+    <body>
+    <h1>LOGIN PAGE</h1>
 
-<html:form action="/login.do">
-    <p>
-        <bean:message key="login.jsp.promt.userName"/>
-        <html:text property="userName" size="20"/>
-        <html:errors property="userName"/>
-    </p>
+    <html:form action="/login">
+        <p>
+            <bean:message key="login.jsp.promt.userName"/>
+            <html:text property="userName" size="20"/>
+            <html:errors property="userName"/>
+        </p>
 
-    <p>
-        <bean:message key="login.jsp.promt.password"/>
-        <html:text property="password" size="20"/>
-        <html:errors property="password"/>
-    </p>
+        <p>
+            <bean:message key="login.jsp.promt.password"/>
+            <html:password property="password" size="20"/>
+            <html:errors property="password"/>
+        </p>
 
-    <html:submit>
-        <bean:message key="login.jsp.prompt.submit"/>
-    </html:submit>
+        <html:submit>
+            <bean:message key="login.jsp.prompt.submit"/>
+        </html:submit>
 
-</html:form>
-</body>
+    </html:form>
+    </body>
 </html:html>

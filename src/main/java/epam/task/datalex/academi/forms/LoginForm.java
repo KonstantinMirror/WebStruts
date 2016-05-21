@@ -5,17 +5,13 @@ import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.action.ActionMessage;
-
 import javax.servlet.ServletRequest;
+import static epam.task.datalex.academi.constants.Constants.*;
 
 public class LoginForm extends ActionForm {
     private String userName = null;
     private String password = null;
 
-    private static final int MIN_LENGTH_LOGIN = 5;
-    private static final int MAX_LENGTH_LOGIN = 20;
-    private static final int MIN_LENGTH_PASSWORD = 5;
-    private static final int MAX_LENGTH_PASSWORD = 20;
 
     public String getUserName() {
         return userName;

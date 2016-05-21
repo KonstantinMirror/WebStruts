@@ -8,6 +8,8 @@
     <artifactId>WebStruts</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
+    <name>Struts App</name>
+
 
     <dependencies>
         <dependency>
