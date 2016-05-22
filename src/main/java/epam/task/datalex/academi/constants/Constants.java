@@ -6,4 +6,6 @@ public class Constants {
     public static final int MAX_LENGTH_LOGIN = 20;
     public static final int MIN_LENGTH_PASSWORD = 5;
     public static final int MAX_LENGTH_PASSWORD = 20;
+
+    public static final String XML_FILE_NAME = "/WEB-INF/data.xml";
 }

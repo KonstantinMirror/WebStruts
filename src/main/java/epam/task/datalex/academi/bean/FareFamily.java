@@ -6,14 +6,14 @@ import java.util.List;
 
 public class FareFamily {
     private String fareFamilyCode;
-    private List <String> AncillaryAirComponentCode  = new ArrayList<String>();
+    private List <String> ancillaryAirComponentCode = new ArrayList<String>();
 
     public FareFamily() {
     }
 
     public FareFamily(String fareFamilyCode, List<String> ancillaryAirComponentCode) {
         this.fareFamilyCode = fareFamilyCode;
-        AncillaryAirComponentCode = ancillaryAirComponentCode;
+        this.ancillaryAirComponentCode = ancillaryAirComponentCode;
     }
 
     public String getFareFamilyCode() {
@@ -25,18 +25,18 @@ public class FareFamily {
     }
 
     public List<String> getAncillaryAirComponentCode() {
-        return AncillaryAirComponentCode;
+        return ancillaryAirComponentCode;
     }
 
     public void setAncillaryAirComponentCode(List<String> ancillaryAirComponentCode) {
-        AncillaryAirComponentCode = ancillaryAirComponentCode;
+        this.ancillaryAirComponentCode = ancillaryAirComponentCode;
     }
 
     @Override
     public String toString() {
         return "FareFamily{" +
                 "fareFamilyCode='" + fareFamilyCode + '\'' +
-                ", AncillaryAirComponentCode=" + AncillaryAirComponentCode +
+                ", ancillaryAirComponentCode=" + ancillaryAirComponentCode +
                 '}';
     }
 }
