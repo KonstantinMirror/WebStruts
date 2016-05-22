@@ -111,5 +111,14 @@ public class Customer {
         public void setCurrencyCode(CurrencyCode currencyCode) {
             this.currencyCode = currencyCode;
         }
+
+        @Override
+        public String toString() {
+            return "Payment{" +
+                    "amountPaid=" + amountPaid +
+                    ", formOfPaymentTypeCode=" + formOfPaymentTypeCode +
+                    ", currencyCode=" + currencyCode +
+                    '}';
+        }
     }
 }

@@ -1,6 +1,7 @@
 package epam.task.datalex.academi.bean;
 
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -12,13 +13,13 @@ public class Reservation {
 
     public static class ReservationComponent {
         private String componentTypeCode;
-        private Date createDateTime;
+        private LocalDateTime createDateTime;
         private InternalStatus internalStatus;
 
         public ReservationComponent() {
         }
 
-        public ReservationComponent(String componentTypeCode, Date createDateTime,
+        public ReservationComponent(String componentTypeCode, LocalDateTime createDateTime,
                                     InternalStatus internalStatus) {
             this.componentTypeCode = componentTypeCode;
             this.createDateTime = createDateTime;
@@ -33,11 +34,11 @@ public class Reservation {
             this.componentTypeCode = componentTypeCode;
         }
 
-        public Date getCreateDateTime() {
+        public LocalDateTime getCreateDateTime() {
             return createDateTime;
         }
 
-        public void setCreateDateTime(Date createDateTime) {
+        public void setCreateDateTime(LocalDateTime createDateTime) {
             this.createDateTime = createDateTime;
         }
 
