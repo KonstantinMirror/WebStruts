@@ -1,15 +1,10 @@
-<%@ taglib prefix="bean" uri="http://struts.apache.org/tags-bean" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="datlexTag" uri="http://datalex.academi.customer.com" %>
-<html>
-<head>
-    <%@include file="WEB-INF/jsp/head.jsp" %>
-    <title><bean:message key="customer.jsp.title"/></title>
-</head>
-<body>
+<%@ taglib prefix="bean" uri="http://struts.apache.org/tags-bean" %>
 
-<<div class="table-responsive">
+
+
+<div class="table-responsive">
     <table class="table">
         <thead>
         <tr>
@@ -40,5 +35,3 @@
         </tbody>
     </table>
 </div>
-</body>
-</html>

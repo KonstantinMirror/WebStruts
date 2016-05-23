@@ -8,14 +8,35 @@
         <form-bean name="loginForm" type="epam.task.datalex.academi.forms.LoginForm"/>
     </form-beans>
 
+
+
     <action-mappings>
+        <action path="/logout"
+                type="epam.task.datalex.academi.controller.LogOutAction">
+            <forward name="success" path="/login.jsp" redirect="true"/>
+        </action>
+
+        <action path="/datalex/flight/customer"
+                type="epam.task.datalex.academi.controller.CustomerAction">
+            <forward name="success" path="/WEB-INF/jsp/data.jsp"/>
+        </action>
+
+        <action path="/datalex/flight/reservation"
+                type="epam.task.datalex.academi.controller.ReservationAction">
+            <forward name="success" path="/WEB-INF/jsp/data.jsp"/>
+        </action>
+
+        <action path="/datalex/flight/farefamily"
+                type="epam.task.datalex.academi.controller.FareFamilyAction">
+            <forward name="success" path="/WEB-INF/jsp/data.jsp"/>
+        </action>
         <action name="loginForm"
                 path="/login"
                 type="epam.task.datalex.academi.controller.LoginAction"
                 scope="request"
                 input="/login.jsp"
                 validate="true">
-            <forward name="success" path="/reservation.jsp"/>
+            <forward name="success" path="/datalex/flight/reservation.do" redirect="true"/>
         </action>
     </action-mappings>
     <message-resources parameter="Application"/>
