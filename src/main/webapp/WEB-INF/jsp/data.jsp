@@ -18,12 +18,12 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="<c:url value=""/>">Home</a>
+          <a class="navbar-brand" href="<c:url value="/datalex.jsp"/>"><bean:message key="data.jsp.home"/> </a>
         </div>
         <ul class="nav navbar-nav ">
-          <li><a href="<c:url value="/datalex/flight/reservation.do"/>">Reservation</a></li>
-          <li><a href="<c:url value="/datalex/flight/customer.do"/>">Customer</a></li>
-          <li><a href="<c:url value="/datalex/flight/farefamily.do"/>">Fare family</a></li>
+          <li><a href="<c:url value="/datalex/flight/reservation.do"/>"><bean:message key="data.jsp.reservation" /></a></li>
+          <li><a href="<c:url value="/datalex/flight/customer.do"/>"><bean:message key="data.jsp.customer" /></a></li>
+          <li><a href="<c:url value="/datalex/flight/farefamily.do"/>"><bean:message key="data.jsp.farefamily"/> </a></li>
         </ul>
       </div>
     </nav>

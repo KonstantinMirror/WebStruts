@@ -37,7 +37,7 @@
                     <html:submit styleClass="btn btn-success">
                         <bean:message key="login.jsp.prompt.submit"/>
                     </html:submit>
-                    <a href="/login.jsp">
+                    <a href="/datalex.jsp">
                         <button type="button" class="btn btn-warning">
                             <bean:message key="login.jsp.prompt.cancel"/>
                         </button>

@@ -8,12 +8,10 @@
         <form-bean name="loginForm" type="epam.task.datalex.academi.forms.LoginForm"/>
     </form-beans>
 
-
-
     <action-mappings>
         <action path="/logout"
                 type="epam.task.datalex.academi.controller.LogOutAction">
-            <forward name="success" path="/login.jsp" redirect="true"/>
+            <forward name="success" path="/datalex.jsp" redirect="true"/>
         </action>
 
         <action path="/datalex/flight/customer"
