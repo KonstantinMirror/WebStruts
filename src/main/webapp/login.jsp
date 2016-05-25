@@ -9,31 +9,35 @@
     </head>
     <body>
     <div class="container">
-        <h2><bean:message key="login.jsp.title.form"/></h2>
+        <h2 class="col-sm-offset-3"><bean:message key="login.jsp.title.form"/></h2>
         <html:form styleClass="form-horizontal" action="/login">
 
             <div class="form-group">
-                <label class="control-label col-sm-4">
+                <label for="login" class="control-label col-sm-4">
                     <bean:message key="login.jsp.promt.userName"/>
-                    <html:text property="userName" size="20"/>
                 </label>
-                <span class="text-warning">
+                <div class="col-sm-4">
+                    <html:text styleId="login" styleClass="form-control col-sm-3" property="userName" size="20"/>
+                </div>
+                <div class="text-warning col-sm-3">
                   <html:errors property="userName"/>
-                </span>
+                </div>
             </div>
 
             <div class="form-group">
-                <label class="control-label col-sm-4">
-                    <bean:message key="login.jsp.promt.password"/>
-                    <html:password property="password" size="20"/>
+                <label for="password" class="control-label col-sm-4">
+                    <bean:message  key="login.jsp.promt.password"/>
                 </label>
-                <span class="text-warning">
+                <div class="col-sm-4">
+                    <html:password styleId="password" styleClass="form-control col-sm-3" property="password" size="20"/>
+                </div>
+                <div class="text-warning col-sm-3">
                   <html:errors property="password"/>
-                </span>
+                </div>
             </div>
 
             <div class="form-group">
-                <div class=" col-sm-offset-2 col-sm-10">
+                <div class="col-sm-5 col-sm-offset-6">
                     <html:submit styleClass="btn btn-success">
                         <bean:message key="login.jsp.prompt.submit"/>
                     </html:submit>
