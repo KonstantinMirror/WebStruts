@@ -19,7 +19,7 @@
         </tr>
         </thead>
         <tbody>
-        <datlexTag:customer/>
+        <datlexTag:customer var="customer"/>
         <c:forEach items="${customer.payments}" var="payment" varStatus="iterator">
             <tr>
                 <td><c:out value="${iterator.index + 1}"/></td>

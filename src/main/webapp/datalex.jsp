@@ -1,7 +1,12 @@
 <%@ taglib prefix="bean" uri="http://struts.apache.org/tags-bean" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ taglib prefix="html" uri="http://struts.apache.org/tags-html" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+
+<!DOCTYPE html>
+<html:html>
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <h1><bean:message key="customer.jsp.amountPaid"/> </h1>
     <%@include file="/WEB-INF/jsp/head.jsp" %>
     <title><bean:message key="datalex.jsp.title"/></title>
 </head>
@@ -15,4 +20,4 @@
 </div>
 
 </body>
-</html>
+</html:html>

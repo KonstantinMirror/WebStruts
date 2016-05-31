@@ -13,7 +13,8 @@ public class FareFamilyAction extends Action {
 
     @Override
     public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        request.setAttribute("location",Location.FAREFAMILY);
+        response.setHeader("Cache-Control", "no-store");
+        request.setAttribute("location", Location.FAREFAMILY);
         return mapping.findForward("success");
     }
 }

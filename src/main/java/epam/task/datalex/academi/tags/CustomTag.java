@@ -7,6 +7,15 @@ import javax.servlet.jsp.tagext.SimpleTagSupport;
 
 
 public class CustomTag extends SimpleTagSupport {
+    private String var;
+
+    public String getVar() {
+        return var;
+    }
+
+    public void setVar(String var) {
+        this.var = var;
+    }
 
     protected String getRealPath(){
         PageContext pageContext = (PageContext) getJspContext();

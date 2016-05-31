@@ -9,10 +9,11 @@ import java.io.IOException;
 
 public class CustomerGetter extends CustomTag  {
 
+
     @Override
     public void doTag() throws JspException, IOException {
         IDAO dao = DAOFabric.getInstance();
         Customer customer = dao.getCustomer(getRealPath() + Constants.XML_FILE_NAME);
-        getJspContext().setAttribute("customer",customer);
+        getJspContext().setAttribute(getVar(), customer);
     }
 }

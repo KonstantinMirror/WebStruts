@@ -3,15 +3,22 @@
         "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
         "http://struts.apache.org/dtds/struts-config_1_3.dtd">
 
+
 <struts-config>
+
     <form-beans>
         <form-bean name="loginForm" type="epam.task.datalex.academi.forms.LoginForm"/>
     </form-beans>
 
     <action-mappings>
+
         <action path="/logout"
                 type="epam.task.datalex.academi.controller.LogOutAction">
             <forward name="success" path="/datalex.jsp" redirect="true"/>
+        </action>
+
+        <action path="/ChangeLocale" type="epam.task.datalex.academi.controller.ChangeLocale">
+            <forward name="success" path="/datalex.jsp"/>
         </action>
 
         <action path="/datalex/flight/customer"
@@ -37,5 +44,13 @@
             <forward name="success" path="/datalex/flight/reservation.do" redirect="true"/>
         </action>
     </action-mappings>
+
+    <controller contentType="text/html; charset=UTF-8"/>
+
     <message-resources parameter="Application"/>
+
+<!--    <plug-in className="org.apache.struts.tiles.TilesPlugin">
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>
+    </plug-in>-->
+
 </struts-config>

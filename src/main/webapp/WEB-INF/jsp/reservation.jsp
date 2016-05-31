@@ -18,7 +18,8 @@
         </tr>
         </thead>
         <tbody>
-        <datlexTag:reservation/>
+        <datlexTag:reservation var="reservation"/>
+
         <c:forEach items="${reservation.reservationComponents}" var="resComp" varStatus="iterator">
             <tr>
                 <td><c:out value="${iterator.index + 1}"/></td>

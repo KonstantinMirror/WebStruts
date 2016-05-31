@@ -19,6 +19,10 @@
                     </ul>
                 </c:otherwise>
             </c:choose>
+            <ul class="breadcrumb">
+                <li><a href="<c:url value="/ChangeLocale.do?language=ru" />">RUS</a></li>
+                <li><a href="<c:url value="/ChangeLocale.do?language=en"/> ">EN</a></li>
+            </ul>
         </ul>
     </div>
 </nav>

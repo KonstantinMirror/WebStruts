@@ -14,7 +14,7 @@
         </tr>
         </thead>
         <tbody>
-        <datlexTag:fareFamily/>
+        <datlexTag:fareFamily var="fareFamily"/>
         <c:forEach items="${fareFamily.ancillaryAirComponentCode}" var="compCode" varStatus="iterator">
             <tr>
                 <td><c:out value="${iterator.index + 1}"/></td>

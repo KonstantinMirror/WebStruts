@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2-sources.jar!/" />
+      <root url="file://D:/Download/jstl-1.2-sources.jar/jstl-1.2-sources" />
     </SOURCES>
   </library>
 </component>
