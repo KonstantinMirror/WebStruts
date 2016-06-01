@@ -1,2 +1,2 @@
-<jsp:forward page="datalex.jsp"/>
+<jsp:forward page="startPage.jsp"/>
 

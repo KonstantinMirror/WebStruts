@@ -14,43 +14,43 @@
 
         <action path="/logout"
                 type="epam.task.datalex.academi.controller.LogOutAction">
-            <forward name="success" path="/datalex.jsp" redirect="true"/>
+            <forward name="success" path="/startPage.jsp" redirect="true"/>
         </action>
 
         <action path="/ChangeLocale" type="epam.task.datalex.academi.controller.ChangeLocale">
-            <forward name="success" path="/datalex.jsp"/>
+            <forward name="success" path="/startPage.jsp"/>
         </action>
 
         <action path="/datalex/flight/customer"
                 type="epam.task.datalex.academi.controller.CustomerAction">
-            <forward name="success" path="/WEB-INF/jsp/data.jsp"/>
+            <forward name="success" path="/WEB-INF/jsp/list.jsp"/>
         </action>
 
         <action path="/datalex/flight/reservation"
                 type="epam.task.datalex.academi.controller.ReservationAction">
-            <forward name="success" path="/WEB-INF/jsp/data.jsp"/>
+            <forward name="success" path="/WEB-INF/jsp/list.jsp"/>
         </action>
 
         <action path="/datalex/flight/farefamily"
                 type="epam.task.datalex.academi.controller.FareFamilyAction">
-            <forward name="success" path="/WEB-INF/jsp/data.jsp"/>
+            <forward name="success" path="/WEB-INF/jsp/list.jsp"/>
         </action>
         <action name="loginForm"
                 path="/login"
                 type="epam.task.datalex.academi.controller.LoginAction"
                 scope="request"
-                input="/login.jsp"
+                input="/WEB-INF/jsp/login.jsp"
                 validate="true">
             <forward name="success" path="/datalex/flight/reservation.do" redirect="true"/>
         </action>
     </action-mappings>
 
-    <controller contentType="text/html; charset=UTF-8"/>
+    <controller nocache="true" contentType="text/html; charset=UTF-8"/>
 
     <message-resources parameter="Application"/>
 
-<!--    <plug-in className="org.apache.struts.tiles.TilesPlugin">
+    <plug-in className="org.apache.struts.tiles.TilesPlugin">
         <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>
-    </plug-in>-->
+    </plug-in>
 
 </struts-config>

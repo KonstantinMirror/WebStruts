@@ -16,6 +16,7 @@ public class autorization implements Filter {
         if (session == null || session.getAttribute("user") == null){
             ((HttpServletResponse)resp).sendRedirect("/datalex.jsp");
         }else {
+            HttpServletResponse response = (HttpServletResponse)resp;
             chain.doFilter(req, resp);
         }
     }

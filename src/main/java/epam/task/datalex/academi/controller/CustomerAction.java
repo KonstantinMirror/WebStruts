@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 public class CustomerAction extends Action {
 
     @Override
-    public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        response.setHeader("Cache-Control", "no-store");
+    public ActionForward execute(ActionMapping mapping, ActionForm form,
+                                 HttpServletRequest request,
+                                 HttpServletResponse response) throws Exception {
+
         request.setAttribute("location",Location.CUSTOMER);
         return mapping.findForward("success");
     }

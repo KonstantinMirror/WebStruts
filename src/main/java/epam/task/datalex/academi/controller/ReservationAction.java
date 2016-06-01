@@ -14,8 +14,9 @@ import java.net.URLEncoder;
 public class ReservationAction extends Action {
 
     @Override
-    public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        response.setHeader("Cache-Control", "no-store");
+    public ActionForward execute(ActionMapping mapping, ActionForm form,
+                                 HttpServletRequest request,
+                                 HttpServletResponse response) throws Exception {
         request.setAttribute("location",Location.RESERVATION);
         return mapping.findForward("success");
 
