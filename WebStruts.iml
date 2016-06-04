@@ -10,8 +10,8 @@
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/resource" />
           <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/resource" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
         </sourceRoots>
       </configuration>
@@ -56,5 +56,6 @@
     <orderEntry type="library" name="Maven: oro:oro:2.0.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts:struts-taglib:1.3.10" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts:struts-tiles:1.3.10" level="project" />
+    <orderEntry type="library" name="activation" level="project" />
   </component>
 </module>
